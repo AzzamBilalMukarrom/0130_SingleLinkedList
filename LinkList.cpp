@@ -80,5 +80,20 @@ public:
         return true;
     }
     
+    void traverse(){
+        if (listempty()){
+            cout << "\nList Kosong\n";
+        }
+        else{
+            cout << "\nData di dalam list adalah:\n";
+            Node *currentnode = start;
+            while (currentnode != NULL){
+                cout << currentnode->noMhs << endl;
+                currentnode = currentnode->next;
+            }
+            cout << endl;
+        }
+    }
 
+    
 }
